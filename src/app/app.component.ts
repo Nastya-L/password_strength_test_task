@@ -1,12 +1,12 @@
 import { Component } from '@angular/core';
-import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
-import { PasswordStrengthComponent } from '../password-strength/password-strength.component';
+import { drawBarComponent } from './components/draw-bar/draw-bar.component';
+import { PasswordInputComponent } from './components/password-input/password-input.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet, PasswordStrengthComponent],
+  imports: [RouterOutlet, drawBarComponent, PasswordInputComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })

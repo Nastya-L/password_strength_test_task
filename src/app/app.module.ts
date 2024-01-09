@@ -1,20 +1,24 @@
-import { NgModule }      from '@angular/core';
+import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { AppComponent }  from './app.component';
+import { AppComponent } from './app.component';
 import { FormsModule } from '@angular/forms';
-import { PasswordStrengthComponent } from '../password-strength/password-strength.component';
+import { drawBarComponent } from './components/draw-bar/draw-bar.component';
+import { PasswordInputComponent } from './components/password-input/password-input.component';
+import { CommonModule } from '@angular/common';
 
 @NgModule({
   declarations: [
     AppComponent,
-    PasswordStrengthComponent
+    drawBarComponent,
+    PasswordInputComponent
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    CommonModule
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
 
-export class AppModule { }
+export class AppModule {}
